@@ -1,0 +1,26 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    padding: 25px;
+    text-align: left;
+    border-bottom: 2px solid #424242;
+}
+
+.body {
+    border: 10px solid red;
+    width: fit-content;
+    height: fit-content;
+    margin: auto
+}
+
+.content {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+}
