@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
+    
+    componentDidMount() {
+        console.log('mounted')
+    }
+    
     render() {
         return (
             <div className="body">
-                <h1>Placeholder for word</h1>
-                <p>Placeholder for rhymes</p>
+                <h1>{this.props.word}</h1>
+                <p>{this.props.rhymes}</p>
             </div>
         );
     }
