@@ -6,10 +6,11 @@ class Body extends Component {
       display: "roger",
       allRhymes: []
     };
+   
   }
   componentDidMount() {
     let URL =
-      "https://cors-anywhere.herokuapp.com/https://rebeccas-rhymes-api.herokuapp.com/list/word/cup";
+      `https://cors-anywhere.herokuapp.com/https://rebeccas-rhymes-api.herokuapp.com/list/word/${this.props.match.params.word}`;
     fetch(URL)
       .then((res) => res.json())
       .then(
