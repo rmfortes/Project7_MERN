@@ -20,6 +20,10 @@ class Aside extends Component {
                 />
         </div>
         </Router>
+
+                //remove router and routes; all you want here are the buttons, which are links 
+                //app should handle the routing 
+
       );
     });
     return <div>{buttons}</div>;
