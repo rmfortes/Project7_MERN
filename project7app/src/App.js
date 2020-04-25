@@ -13,8 +13,7 @@ class App extends Component {
     this.state = {
       words: "",
       rhymes: [],
-      data: [],
-      aside: ""
+      data: []
     };
 
     this.newWord = this.newWord.bind(this);
@@ -51,7 +50,6 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          {/* <Link to="/">Side Buttons</Link> */}
           <Header />
           <div className="content">
             <Route
@@ -60,6 +58,7 @@ class App extends Component {
                 <Aside
                   {...routerProps}
                   {...this.state}
+
                 />
               )}
             //   component={Aside}
